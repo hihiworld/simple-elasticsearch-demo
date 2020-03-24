@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "id": {
+          "type": "long"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "createDate": {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "description": {
+          "type": "text",
+          "index": "analyzed"
+        },
+        "phoneNumber": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

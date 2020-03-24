@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>搜索主页</title>
+</head>
+<body>
+    <div>查询方框
+        <form action="/search" method="post">
+            <input type="text" name="keyword" placeholder="例如   跳舞">
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+
+    <div>创建elastic数据的方框
+        <form action="/createDoc" method="post">
+            <input type="text" name="username" placeholder="例如   lisi">
+            <input type="submit" value="创建该用户信息">
+        </form>
+    </div>
+
+    <div>删除elastic数据的方框
+        <form action="/deleteDoc" method="post">
+            <input type="text" name="name" placeholder="例如   zhangsan">
+            <input type="submit" value="删除该用户信息">
+        </form>
+    </div>
+</body>
+
+</html>
